@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .pokemon {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            width: 100px;
+            height: 10px;
+
+            background-repeat: no-repeat;
+            background-position: center;
+
+            
+        }
+        .nav-buttons {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pokéapi</h1>
+    <div class="grid" id="pokemonGrid"></div>
+
+    <div class="nav-buttons">
+        <button onclick="changePage('previous')">← Anterior</button>
+        <button onclick="changePage('next')">Siguiente →</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
