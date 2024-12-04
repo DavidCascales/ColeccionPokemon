@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  /* Centrado entre los elementos */
+    padding: 20px;
+    margin-top: 5%;
+  }
+  
+  .pokemon {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+  }
+  .search-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the input and button */
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    z-index: 1000;
+  }
+  
+  .search-bar input,
+  .search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .search-bar h1 {
+    position: absolute; /* Keep h1 on the left */
+    left: 10px;
+    margin: 0;
+  }
+  
